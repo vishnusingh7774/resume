@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Modern Header Styling */
+.modern-header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-bottom: 4px solid #00c6ff;
+    animation: slideDown 1s ease-out;
+}
+
+.header-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.header-content h3 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+.contact-info p {
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: #00c6ff;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: #ffcc00;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Section Styling */
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Links */
+a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    .header-content h3 {
+        font-size: 1rem;
+    }
+}
